@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
-import ErrorHttpInterceptor from './utils/interceptors/error-http-interceptor';
+//import ErrorHttpInterceptor from './utils/interceptors/error-http-interceptor';
+import { ErrorHttpInterceptor } from './utils/interceptors/error-http-interceptor';
+
 
 //Configurando o locale pt-BR
 import localePt from '@angular/common/locales/pt';
@@ -33,12 +35,12 @@ registerLocaleData(localePt, 'pt-BR');
       useClass: ErrorHttpInterceptor,
       multi: true
     },
-    { 
-      provide: LOCALE_ID, 
-      useValue: 'pt-BR' 
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt-BR'
     }
 
-],
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

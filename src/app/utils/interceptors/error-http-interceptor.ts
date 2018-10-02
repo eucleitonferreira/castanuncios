@@ -2,7 +2,7 @@ import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from "@angular/c
 import { Observable, empty } from "rxjs";
 import { catchError } from "rxjs/operators";
 
-export default class ErrorHttpInterceptor implements HttpInterceptor {
+export class ErrorHttpInterceptor implements HttpInterceptor {
 
     intercept(
         req: HttpRequest<any>,

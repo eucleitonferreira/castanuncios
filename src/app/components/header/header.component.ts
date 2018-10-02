@@ -11,7 +11,7 @@ import { Anuncio } from '../../models/anuncio.model';
 })
 export class HeaderComponent implements OnInit {
 
-  private anuncios: Observable<Anuncio[]>;
+  public anuncios: Observable<Anuncio[]>;
 
   private subjectPesquisa: Subject<string> = new Subject<string>();
 

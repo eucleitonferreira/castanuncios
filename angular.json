@@ -46,9 +46,28 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "outputPath": "docs",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            },
+            "teste": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.teste.ts"
+                }
+              ],
+              "outputPath": "dist-test/cast-anuncios",
+              "optimization": true,
+              "outputHashing": "dist_tes/cat-anuncios",
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "aot": true,

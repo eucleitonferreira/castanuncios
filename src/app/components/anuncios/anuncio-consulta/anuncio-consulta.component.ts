@@ -30,7 +30,7 @@ export class AnuncioConsultaComponent implements OnInit {
   anuncioSelecionado: Anuncio;
 
   @ViewChild(ConfirmaExclusaoComponent) componenteExclusao: ConfirmaExclusaoComponent;
-
+  public p: number = 1
   constructor(private formBuilder: FormBuilder,
     private tipoAnuncioService: TipoAnuncioService,
     private anuncioService: AnuncioService) { }
